@@ -50,11 +50,11 @@ class Mini1 {
     for (int i = 0; i < this.numCompanies; i++) {
       int type = sc.nextInt();
       if (type == Mini1.MNC) {
-        this.companies[i] = new MNC(sc.next(), sc.nextInt());
+        companies[i] = new MNC(sc.next(), sc.nextInt());
       } else if (type == Mini1.STARTUP) {
-        this.companies[i] = new Startup(sc.next(), sc.nextInt(), sc.nextInt());
+        companies[i] = new Startup(sc.next(), sc.nextInt(), sc.nextInt());
       } else if (type == Mini1.SME) {
-        this.companies[i] = new SME(sc.next(), sc.nextInt(), sc.nextInt());
+        companies[i] = new SME(sc.next(), sc.nextInt(), sc.nextInt());
       }
     }
 
@@ -68,7 +68,7 @@ class Mini1 {
      */
     for (int i = 0; i < this.numYears; i++) {
       for (int j = 0; j < this.numCompanies; j++) {
-        this.companies[j].oneYear();
+        companies[j].oneYear();
       }
     }
 
@@ -76,7 +76,7 @@ class Mini1 {
      * TODO: Refactor this poorly written for loop
      */
     for (int j = 0; j < this.numCompanies; j++) {
-      System.out.println(this.companies[j]);
+      System.out.println(companies[j]);
     }
   }
 }
